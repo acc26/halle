@@ -1,0 +1,9 @@
+def main(args:Array[String]): Unit ={
+    val str="123456789"
+   var sum = 0L
+     for(ch<-str){ //字符串本身就是一个字节数组
+        sum=sum*10+(ch- '0')
+     }
+       println(sum)
+   val b=str.toCharArray.map(ch=>ch-'0').reduce((v1,v2)=>v1*10 + v2)
+      println(b)
